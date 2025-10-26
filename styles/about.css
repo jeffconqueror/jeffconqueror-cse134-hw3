@@ -1,0 +1,82 @@
+   main {
+    max-width: 900px;
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-md);
+}
+
+/* Profile section with Grid */
+.profile-section {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+    padding: var(--spacing-md);
+    background: var(--card-bg);
+    border-radius: 0.5rem;
+    
+    & img {
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+    }
+}
+
+/* Skills list with Flexbox */
+.skills-section {
+    margin-top: var(--spacing-md);
+    
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style: none;
+        
+        & li {
+            /* USE COLOR-MIX for skill tag background */
+            background: color-mix(in srgb, var(--secondary-color), var(--primary-color) 40%);
+            color: white;
+            padding: 0.5em 1.5em;
+            border-radius: 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                /* USE COLOR-MIX for darker hover */
+                background: color-mix(in srgb, var(--primary-color), black 20%);
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+/* Progress bars styling */
+progress {
+    width: 100%;
+    height: 25px;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    appearance: none;
+    
+    &::-webkit-progress-bar {
+        background-color: #e0e0e0;
+        border-radius: 0.5rem;
+    }
+    
+    &::-webkit-progress-value {
+        background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+        border-radius: 0.5rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
