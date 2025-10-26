@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Computer Science student portfolio showcasing projects and skills">
+    <meta name="author" content="Jeff Huhtua">
+    <title>My Portfolio - Home</title>
+    
+    <!-- link tag for future CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- style tag (empty for now, just showing we can use it) -->
+    <style>
+        /* Only border allowed for structure */
+        main {
+            border: 1px solid #ccc;
+        }
+        /* Custom semantic CSS element */
+        info-box {
+            display: block;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #0066cc;
+            border-radius: 5px;
+            background-color: #e6f2ff;
+        }
+        
+        info-box::before {
+            content: "ℹ️ ";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jeff Huhtua</h1>
+        <p><strong>Computer Science Student</strong> | <em>Aim to develop new pipeline for AI Applications</em></p>
+    </header>
+    
+    <!-- Hello World custom element - logs to console only -->
+    <hello-world id="greeting"></hello-world>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi! I'm a <b>computer science student</b> passionate about about building efficient pipelines and solving 
+                complex technical problems with AI.</p>
+            <br>
+            <p>This site showcases my <i>projects</i>, skills, and experience.</p>
+            
+            <!-- ADD THIS: Custom info-box element -->
+            <info-box>
+                This is the custom semantic element.
+            </info-box>
+            
+            <button type="button">View My Projects</button>
+        </section>
+
+        <section>
+            <h3>Featured Projects</h3>
+            <article>
+                <h3>3D Object Asset Rigging</h3>
+                <p>We aim to develop a fully automated pipeline that can take a text to 3D monolithic mesh to a rigged and textured 3D object.</p>
+                <a href="Project.html">Learn more</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:your.email@example.com">jeff.huhtua@gmail.com</a></p>
+        <p>&copy; 2025 Jeff Huhtua. All rights reserved.</p>
+    </footer>
+
+    <!-- noscript tag -->
+    <noscript>
+        <p>JavaScript is disabled in your browser. Some features may not work.</p>
+    </noscript>
+
+    <!-- script tag placeholder -->
+    <script>
+        // Hello World custom element - logs to console
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello World!");
+            }
+        }
+        
+        customElements.define('hello-world', HelloWorld);
+    </script>
+</body>
+</html>

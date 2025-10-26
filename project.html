@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>A showcase of my work and accomplishments</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Featured Projects</h2>
+            
+            <!-- Project 1 -->
+            <article>
+                <h3>3D models</h3>
+                <img src="image/Screenshot 2025-10-17 103850.png" alt="Portfolio website screenshot" width="300">
+                <p>A <strong>3D model</strong> and <em>3D model</em>.</p>
+                <p><b>Technologies:</b> Blender, Maya, 3ds Max</p>
+                
+            </article>
+
+            <br>
+
+            <!-- Project 2 -->
+            <article>
+                <h3>Low Light Image Enhancement</h3>
+                <img src="image/Screenshot 2025-10-17 110149.png" alt="Task manager app screenshot" width="300">
+                <img src="image/Screenshot 2025-10-17 110214.png" alt="Task manager app screenshot" width="300">
+                <p>A <strong>Low Light Image Enhancement</strong> and <em>Low Light Image Enhancement</em>.</p>
+                <p><b>Technologies:</b> Pytorch, Python</p>
+                
+            </article>
+
+            <br>
+
+            <!-- Project 3 -->
+            <article>
+                <h3>Video reasoning</h3>
+                <img src="images/project3.jpg" alt="Weather dashboard screenshot" width="300">
+                <p>A <strong>Video reasoning</strong> and <em>Video reasoning</em>.</p>
+                <p><b>Technologies:</b> Pytorch, Python</p>
+                
+            </article>
+        </section>
+
+        <!-- Dialog element (modal) - IMPORTANT: This is the last missing required tag! -->
+        <section>
+            <h2>Want to collaborate?</h2>
+            <button onclick="document.getElementById('projectDialog').showModal()">
+                Open Contact Dialog
+            </button>
+
+            <dialog id="projectDialog">
+                <h3>Let's Work Together!</h3>
+                <p>I'm always interested in new projects and collaborations.</p>
+                <form method="dialog">
+                    <button type="submit">Close</button>
+                </form>
+            </dialog>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:your.email@example.com">jeff.huhtua@gmail.com</a></p>
+        <p>&copy; 2025 Jeff Huhtua. All rights reserved.</p>
+    </footer>
+
+    <noscript>
+        <p>JavaScript is disabled. Some interactive features may not work.</p>
+    </noscript>
+</body>
+</html>
