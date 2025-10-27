@@ -53,3 +53,18 @@ iframe {
     display: block;
     margin: 1rem 0;
 }
+
+picture {
+    display: block;
+    margin: 1rem 0;
+}
+
+picture img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0.5rem;
+    display: block;
+}

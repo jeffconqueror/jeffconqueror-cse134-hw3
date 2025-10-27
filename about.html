@@ -23,33 +23,30 @@
     </nav>
 
     <main>
-        <section>
-            <!-- img tag -->
-            <img src="simpson-v2.webp" alt="Jeff Huhtua profile photo" width="200">
+        <section class="profile-section">
+            <!-- Simple img tag - no picture wrapper needed -->
+            <img src="image/simpson-v2.webp" 
+                 alt="Jeff Huhtua, computer science graduate student at UC San Diego, professional portrait"
+                 loading="eager">
             
-            <!-- picture tag with multiple sources -->
-            <picture>
-                <source srcset="images/profile-large.jpg" media="(min-width: 800px)">
-                <source srcset="images/profile-medium.jpg" media="(min-width: 400px)">
-                <img src="image/profile.png" alt="Profile photo">
-            </picture>
-
-            <h2>Hello! I'm Jeff Huhtua</h2>
-            <p>I'm a computer science student at UC San Diego, focused on machine learning and software engineering. As an efficient and detail-oriented researcher, I thrive on solving complex 
-                technical challenges. My work combines cutting-edge machine learning techniques 
-                with practical applications in computer vision and graphics. Always struggling to keep up with the latest trends in the field and find the correct Github repositories.</p>
+            <div>
+                <h2>Hello! I'm Jeff Huhtua</h2>
+                <p>I'm a computer science student at UC San Diego, focused on machine learning and software engineering. 
+                   As an efficient and detail-oriented researcher, I thrive on solving complex technical challenges. 
+                   My work combines cutting-edge machine learning techniques with practical applications in computer vision and graphics.</p>
+            </div>
         </section>
-
-        <section>
+    
+        <section class="skills-section">
             <h3>My Skills</h3>
             <ul>
                 <li>HTML5 & CSS3</li>
                 <li>JavaScript</li>
                 <li>Python</li>
-                <li>Pytorch</li>
+                <li>PyTorch</li>
             </ul>
         </section>
-
+    
         <section>
             <h3>Education</h3>
             <div>
@@ -57,17 +54,15 @@
                 <p>M.S. Computer Science - Expected 2026</p>
             </div>
         </section>
-
-        <!-- Using span for inline text styling -->
-        <p>Check out my <span>latest projects</span> on the projects page!</p>
-
-        <!-- Progress bar example -->
+    
+        <p>Check out my <span style="color: var(--secondary-color); font-weight: 600;">latest projects</span> on the projects page!</p>
+    
         <h3>Learning Progress</h3>
         <label for="html-progress">HTML Skills:</label>
-        <progress id="html-progress" value="50" max="100">80%</progress>
+        <progress id="html-progress" value="80" max="100">80%</progress>
         <br>
         <label for="js-progress">JavaScript Skills:</label>
-        <progress id="js-progress" value="01" max="100">60%</progress>
+        <progress id="js-progress" value="60" max="100">60%</progress>
     </main>
 
     <footer>

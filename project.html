@@ -31,7 +31,17 @@
                     <!-- Project 1 -->
                     <article>
                 <h3>3D models</h3>
-                <img src="image/Screenshot 2025-10-17 103850.png" alt="Portfolio website screenshot" width="300">
+                <img src="image/Screenshot 2025-10-17 103850.png" 
+                     srcset="image/Screenshot 2025-10-17 103850.png 400w,
+                             image/Screenshot 2025-10-17 103850.png 800w,
+                             image/Screenshot 2025-10-17 103850.png 1200w"
+                     sizes="(max-width: 480px) 100vw,
+                            (max-width: 768px) 50vw,
+                            33vw"
+                     alt="3D bicycle model showing detailed mesh structure with colorful components"
+                     width="800"
+                     height="600"
+                     loading="lazy">
                 <p>A <strong>3D model</strong> and <em>3D model</em>.</p>
                 <p><b>Technologies:</b> Blender, Maya, 3ds Max</p>
                 
@@ -40,13 +50,43 @@
             <br>
 
             <!-- Project 2 -->
-            <article>
+            <article class="comparison-layout">
                 <h3>Low Light Image Enhancement</h3>
-                <img src="image/Screenshot 2025-10-17 110149.png" alt="Task manager app screenshot" width="300">
-                <img src="image/Screenshot 2025-10-17 110214.png" alt="Task manager app screenshot" width="300">
-                <p>A <strong>Low Light Image Enhancement</strong> and <em>Low Light Image Enhancement</em>.</p>
-                <p><b>Technologies:</b> Pytorch, Python</p>
                 
+                <div class="image-comparison">
+                    <figure>
+                        <img src="image/Screenshot 2025-10-17 110149.png" 
+                             srcset="image/Screenshot 2025-10-17 110149.png 400w,
+                                     image/Screenshot 2025-10-17 110149.png 800w,
+                                     image/Screenshot 2025-10-17 110149.png 1200w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    33vw"
+                             alt="Dark cathedral interior showing poor visibility in low light conditions"
+                             width="800"
+                             height="600"
+                             loading="lazy">
+                        <figcaption><strong>Before</strong></figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="image/Screenshot 2025-10-17 110214.png" 
+                             srcset="image/Screenshot 2025-10-17 110214.png 400w,
+                                     image/Screenshot 2025-10-17 110214.png 800w,
+                                     image/Screenshot 2025-10-17 110214.png 1200w"
+                             sizes="(max-width: 480px) 100vw,
+                                    (max-width: 768px) 50vw,
+                                    33vw"
+                             alt="Enhanced cathedral interior with improved brightness and preserved architectural details"
+                             width="800"
+                             height="600"
+                             loading="lazy">
+                        <figcaption><strong>After</strong></figcaption>
+                    </figure>
+                </div>
+                
+                <p>Deep learning model for <strong>low light image enhancement</strong> using CNN architecture.</p>
+                <p><b>Technologies:</b> PyTorch, Python, OpenCV</p>
             </article>
 
             <br>
@@ -54,7 +94,17 @@
             <!-- Project 3 -->
             <article>
                 <h3>Video reasoning</h3>
-                <img src="images/project3.jpg" alt="Weather dashboard screenshot" width="300">
+                <img src="image/download.jpg" 
+                     srcset="image/download.jpg 400w,
+                             image/download.jpg 800w,
+                             image/download.jpg 1200w"
+                     sizes="(max-width: 480px) 100vw,
+                            (max-width: 768px) 50vw,
+                            33vw"
+                     alt="Video analysis interface showing temporal reasoning results"
+                     width="800"
+                     height="600"
+                     loading="lazy">
                 <p>A <strong>Video reasoning</strong> and <em>Video reasoning</em>.</p>
                 <p><b>Technologies:</b> Pytorch, Python</p>
                 

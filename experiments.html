@@ -26,11 +26,15 @@
         <section>
             <h2>1. Picture Element Demo</h2>
             <picture>
-                <source srcset="Screenshot 2025-10-17 103850.png" media="(min-width: 800px)">
-                <source srcset="Screenshot 2025-10-17 103948.png" media="(min-width: 400px)">
-                <img src="image/Screenshot 2025-10-17 103850.png" alt="Responsive image demo">
+                <source srcset="image/Screenshot 2025-10-17 103850.png" media="(min-width: 800px)">
+                <source srcset="image/Screenshot 2025-10-17 103948.png" media="(min-width: 400px)">
+                <img src="image/Screenshot 2025-10-17 103850.png" 
+                     alt="Screenshot demonstrating responsive image behavior at different viewport sizes"
+                     width="800"
+                     height="600"
+                     loading="lazy">
             </picture>
-            <p>Picture element</p>
+            <p>Picture element demonstrates art direction for responsive images.</p>
         </section>
 
         <section>
@@ -45,7 +49,7 @@
         <section>
             <h2>3. Video Player</h2>
             <video width="400" controls>
-                <source src="video\vlm_test1.mp4" type="video/mp4">
+                <source src="video/vlm_test1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p>Video player</p>
