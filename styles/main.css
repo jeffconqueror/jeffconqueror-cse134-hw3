@@ -394,3 +394,32 @@ main > h2:first-of-type::before {
     background: var(--secondary-color);
     margin-bottom: 1rem;
 }
+
+h1, h2, h3 {
+    text-wrap: balance;  
+}
+
+p {
+    text-wrap: pretty;  
+}
+
+dialog {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s, overlay 0.3s allow-discrete, display 0.3s allow-discrete;
+    
+    @starting-style {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+article {
+    opacity: 1;
+    transform: translateY(0);
+    
+    @starting-style {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
