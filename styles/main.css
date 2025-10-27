@@ -277,3 +277,37 @@ button[type="submit"] {
         box-shadow: 0 5px 20px rgba(52, 152, 219, 0.4);
     }
 }
+
+/* phone view */
+@media (max-width: 480px) {
+    html { font-size: 12px; }
+    header { min-height: 20dvh; }
+    nav ul { 
+        flex-direction: column; 
+        align-items: center;
+    }
+    header h1 {
+        font-size: 1.75rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    nav ul li a {
+        padding: 1rem 2rem;
+        display: block;
+    }
+}
+
+/* tablet view */
+@media (min-width: 481px) and (max-width: 1023px) {
+    html { font-size: 14px; }
+    header { min-height: 25dvh; }
+}
+
+body, html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
