@@ -86,29 +86,25 @@ nav {
 /* ========== HEADER (Same for all pages) ========== */
 header {
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 1.5rem 1rem;
     background: linear-gradient(135deg, 
         var(--primary-color), 
         color-mix(in srgb, var(--secondary-color), var(--accent-color) 30%)
     );
     color: white;
-    min-height: 20dvh;
     width: 100dvw;
     margin-left: calc(50% - 50dvw);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     
     & h1 {
         font-family: var(--font-heading);
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        animation: fadeIn 0.8s ease-out;
+        font-size: 2rem;
+        margin: 0;
     }
     
     & p {
-        font-size: 1.2rem;
-        opacity: 0.9;
+        font-size: 0.95rem;
+        opacity: 0.85;
+        margin-top: 0.25rem;
     }
 }
 

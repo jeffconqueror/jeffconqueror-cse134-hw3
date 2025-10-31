@@ -2,12 +2,14 @@ main {
     max-width: 1200px;
     margin: var(--spacing-lg) auto;
     padding: var(--spacing-md);
+    align-items: center; 
 }
 
 /* Projects Grid Layout */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr;  
+    max-width: 900px;
     gap: var(--spacing-lg);
     margin-top: var(--spacing-md);
 }
@@ -123,4 +125,14 @@ article img {
     }
 }
 
+main > section > h2 {
+    text-align: center;
+}
+
+/* Center the projects container */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
