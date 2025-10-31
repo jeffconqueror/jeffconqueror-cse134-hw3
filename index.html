@@ -7,7 +7,6 @@
     <meta name="author" content="Jingcheng Li">
     <title>My Portfolio - Home</title>
     
-    <!-- link tag for future CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
     
@@ -39,7 +38,6 @@
         <p><strong>Computer Science Student</strong> | <em>Aim to develop new pipeline for AI Applications</em></p>
     </header>
     
-    <!-- Hello World custom element - logs to console only -->
     <hello-world id="greeting"></hello-world>
     
     <nav>
@@ -52,13 +50,13 @@
     </nav>
 
     <main id="main-content">
-        <section>
+        <section class="welcome-section">
             <h2>Welcome to My Portfolio</h2>
                 <p>Hi! I'm a <b>computer science student</b> passionate about building 
                 efficient pipelines and solving complex technical problems with AI.</p>
             <p>This site showcases my <i>projects</i>, skills, and experience.</p>
             
-            <button type="button" onclick="window.location.href='Project.html'">View My Projects</button>
+            <a href="Project.html" class="button-link">View My Projects</a>
         </section>
 
         <section>
@@ -76,12 +74,10 @@
         <p>&copy; 2025 Jingcheng Li. All rights reserved.</p>
     </footer>
 
-    <!-- noscript tag -->
     <noscript>
         <p>JavaScript is disabled in your browser. Some features may not work.</p>
     </noscript>
 
-    <!-- script tag placeholder -->
     <script>
         // Hello World custom element - logs to console
         class HelloWorld extends HTMLElement {

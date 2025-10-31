@@ -1,4 +1,4 @@
-   main {
+main {
     max-width: 900px;
     margin: var(--spacing-lg) auto;
     padding: var(--spacing-md);
@@ -29,6 +29,60 @@
     }
 }
 
+/* Wrapper for the profile pic and new links */
+.profile-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Space between pic and links */
+}
+
+/* Styles for the links list */
+.profile-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem; /* Space between icons */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the individual links */
+.profile-links li {
+    padding: 0;
+}
+
+/* MODIFIED: Normal state now has transparent background and border */
+.profile-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* No background by default */
+    border: 1px solid transparent; /* No border by default (keeps layout stable) */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    
+    /* The <img> icon itself will be styled below */
+}
+
+
+/* Style for the <img> icons inside the links (dark by default) */
+.profile-links a img {
+    width: 26px;
+    height: 26px;
+    transition: filter 0.3s ease;
+    
+    /* This filter changes the black SVG to match var(--text-color) */
+    /* filter: invert(14%) sepia(6%) saturate(1007%) hue-rotate(167deg) brightness(95%) contrast(87%); */
+}
+
+
+
 @media (max-width: 768px) {
     .profile-section {
         grid-template-columns: 1fr;
@@ -39,6 +93,16 @@
             height: 200px;
             margin: 0 auto;
         }
+    }
+    
+    .profile-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-links a img {
+        width: 22px;
+        height: 22px;
     }
 }
 

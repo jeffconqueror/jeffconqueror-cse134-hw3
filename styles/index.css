@@ -1,4 +1,4 @@
-   main {
+main {
     max-width: 1000px;
     margin: var(--spacing-lg) auto;
     padding: var(--spacing-md);
@@ -18,7 +18,10 @@
         margin-bottom: 1rem;
     }
     
-    & button {
+    /* MODIFIED: This styles the new <a> tag */
+    & a.button-link {
+        display: inline-block;
+        text-decoration: none;
         background-color: var(--secondary-color);
         color: white;
         padding: 1em 3em;
@@ -32,6 +35,7 @@
         &:hover {
             background-color: var(--primary-color);
             transform: scale(1.05);
+            color: white; /* Keep text white on hover */
         }
     }
 }

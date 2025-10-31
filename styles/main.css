@@ -92,7 +92,7 @@ header {
         color-mix(in srgb, var(--secondary-color), var(--accent-color) 30%)
     );
     color: white;
-    min-height: 30dvh;
+    min-height: 20dvh;
     width: 100dvw;
     margin-left: calc(50% - 50dvw);
     display: flex;
